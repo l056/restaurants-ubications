@@ -30,7 +30,7 @@ Registro de un nuevo usuario
 
 - /login Metodo = POST
 
-Login del usuario, no se puede loguearse nuevamente con el mismo usuario, tiempo de expiracion una hora o usando la ruta /logout
+Login del usuario, no puede loguearse nuevamente con el mismo usuario, tiempo de expiracion una hora o usando la ruta /logout
     - in
     {
     "email": "example@gmail.com",
@@ -95,7 +95,7 @@ username (str): Nombre de usuario, único y no nulo.
 email (str): Correo electrónico, único y no nulo.
 password (str): Contraseña, no nula.
 
--transaction
+- transaction
 Contiene los valores 
 id (int): Clave primaria.
 user_id (int): Clave foránea que referencia a 'user.id', no nula.

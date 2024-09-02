@@ -23,7 +23,7 @@ services:
 
   web:
     build: .
-    command: sh -c "python init_db.py && flask --app app run --host=0.0.0.0"
+    command: sh -c "python init_db.py && flask --app src.factory.factory:create_app run --host=0.0.0.0"
     env_file:
       - .env
     volumes:
